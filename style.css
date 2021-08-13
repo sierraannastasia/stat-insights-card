@@ -4,9 +4,15 @@ body{
   }
   
 #header {
-  /* background-color: #1c1a37; */
-  height: 100%;
-  background: linear-gradient(90deg, #1c1a37 50%, #ae5fe0 50%);
+  background-color: #1c1a37;
+
+  /* This code splits the background color in half so each column can have it's own color.
+  That helps achieve the look of a purple overlay on the image in a simple way.
+  The problem is that it's difficult to make the background switch from vertically split to horizontally split based on screen size. */
+  
+  /* height: 100%;
+  background: linear-gradient(90deg, #1c1a37 50%, #ae5fe0 50%); */
+
   border-radius: 10px;
 }
 
@@ -27,8 +33,4 @@ p {
   font-size: 12px;
   color: #ffffff85;
   letter-spacing: 1px;
-}
-
-img {
-  opacity: .4;
 }
